@@ -17,6 +17,7 @@ function add() {
     alert(`Producto: ${product.producto}\nImporte: ¥${product.precio}\nCantidad: ${product.cantidad}`);
   }
 }
+
 function calc() {
   let total = 0;
   let detalleProducto = '';
@@ -24,7 +25,7 @@ function calc() {
     total += item.subtotal;
     detalleProducto += `Producto: ${item.producto}\nImporte: ¥${item.precio}\nCantidad: ${item.cantidad}\nSubtotal: ¥${item.subtotal}\n\n`;
   });
-
+  
   let compras = 0;
   if (total <= 2000) {
     compras = 500;
@@ -35,7 +36,6 @@ function calc() {
   }
 
   const totalCompras = total + compras;
-
   alert(
     `${detalleProducto}Los gastos de envío son de: ¥${compras}\nEl importe total es de: ¥${totalCompras}`
   );
