@@ -1,0 +1,158 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+div,li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+.section_info {
+  padding: 50px 10% 30px;
+}
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+.caffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+}
+.section_menu {
+    background: url("../images/sample_menu_bg.jpg") no-repeat bottom;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+.coff_menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+.coff_menu_cafes {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.coff_menu_text {
+  width: 80%;
+  padding: 10px;
+}
+.h2_text {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.pagina_final {
+    background-color: #251e19;
+    height: 75px;
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: -75;
+    width: 100%;
+}
+.nav_footer {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.footer_href {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    padding: 0 15px;
+    font-size: 15px;
+}
+.logo_final {
+    width: 82px;
+}
+.rights_footer {
+    display: flex;
+    justify-content: center;
+    color: white; 
+}
+.btn {
+    background-color:rgba(0, 255, 13, 0.5);
+    padding: 0.5em 0.5em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 7.5px;
+    color: black ;
+    font-weight: 500;
+    text-align: center;
+}

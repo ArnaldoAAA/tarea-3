@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>DIC cafe</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="header_nav">
+        <a href="index.html" class="logo"
+          ><img src="images/sample_logo_k.png"
+        /></a>
+        <ul class="global_nav">
+          <a href="index.html" class="global_nav_item">
+            <li>Home</li>
+          </a>
+          <a href="#menu" class="global_nav_item">
+            <li>Menu</li>
+          </a>
+          <a href="contact.html" class="global_nav_item">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div class="key section_info"></div>
+    <section class="section_info">
+      <div class="section_title">
+        <h1>Venta de Café en Grano</h1>
+      </div>
+    </section>
+    <section class="section_info section_menu">
+      <div class="center">
+        <h1 class="menu_title">Coffee menu</h1>
+      </div>
+      <ul class="coff_menu">
+        <li class="coff_menu_cafes">
+          <div class="coff_menu_text">
+            <h2 class="h2_text">Mezcla Original 200g</h2>
+            <p>¥500</p>
+          </div>
+          <img src="images/sample_cafe1.jpg" class="caffee_menu_image" />
+        </li>
+        <li class="coff_menu_cafes">
+          <div class="coff_menu_text">
+            <h2 class="h2_text">Mezcla Original 500g</h2>
+            <p>¥900</p>
+          </div>
+          <img src="images/sample_cafe1.jpg" class="caffee_menu_image" />
+        </li>
+        <li class="coff_menu_cafes">
+          <div class="coff_menu_text">
+            <h2 class="h2_text">Mezcla Especial 200g</h2>
+            <p>¥700</p>
+          </div>
+          <img src="images/sample_cafe3.jpg" class="caffee_menu_image" />
+        </li>
+        <li class="coff_menu_cafes">
+          <div class="coff_menu_text">
+            <h2 class="h2_text">Mezcla Especial 500g</h2>
+            <p>¥1200</p>
+          </div>
+          <img src="images/sample_cafe3.jpg" class="caffee_menu_image" />
+        </li>
+      </ul>
+      <h2>Información de Envío</h2>
+      <ul>
+        <li>• La tarifa de envío es de 500¥ si el monto total es inferior a 2000¥</li>
+        <li>• 250¥ para pedidos superiores a 2000¥</li>
+        <li>• Gratis para pedidos superiores a 3000¥</li>
+      </ul>
+    </section>
+    <section class="section_info">
+      <h2>Pedidos</h2>
+      <form>
+        <p>Seleccione un producto</p>
+        <div>
+          <select id="product" required>
+            <option hidden value="0">Por favor, seleccione.</option>
+            <option value="500">Mezcla original 200g ¥ 500</option>
+            <option value="900">Mezcla original 500g ¥ 900</option>
+            <option value="700">Mezcla especial 200g ¥ 700</option>
+            <option value="1200">Mezcla especial 500g, 1.200 yenes.</option>
+          </select>
+          <p>Seleccione la cantidad</p>
+          <input type="number" min="1" max="5" id="number" required />
+        </div>
+        <br />
+        <input type="button" class="btn" value="Añadir" onclick="add()" />
+        <input type="button" class="btn" value="Importe Total" onclick="calc()"
+        />
+      </form>
+      
+    </section>
+    <footer class="pagina_final">
+      <nav>
+        <ul class="nav_footer">
+          <a href="index.html" class="footer_href">
+            <li>Home</li>
+          </a>
+          <a href="#menu" class="footer_href">
+            <li>Menu</li>
+          </a>
+          <a href="contact.html" class="footer_href">
+            <li>Contact</li>
+          </a>
+          <a href="index.html" class="footer_href" class="footer_href">
+            <li>
+              <img src="images/sample_logo_w.png" class="logo_final" />
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <p class="rights_footer">© DIVIC Corp. All RIGHTS RESERVED.</p>
+    </footer>
+    <script type="text/javascript" src="javascripts/sample.js"></script>
+  </body>
+</html>
